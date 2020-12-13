@@ -1,0 +1,394 @@
+html{
+	box-sizing: border-box;
+}
+*{
+text-decoration: none;
+list-style-type: none;
+}
+*::after{
+	box-sizing: inherit;
+}
+*::before{
+	box-sizing: inherit;
+}
+
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+body{
+	
+	font-family:'Ubuntu', sans-serif;
+	font-size: 16px;
+	color:grey;
+	line-height:22px ;
+}
+
+
+.container{
+	max-width: 1265px ;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+.header__logo {
+	max-width: 196px;
+}
+.header__logo-link {
+
+}
+.header__logo-img {
+}
+
+.menu {
+	
+}
+.menu__list {
+
+max-width: 470px;
+
+}
+.menu__list-item {
+	display: inline-block;
+	margin-left: 40px;
+	
+}
+.menu__list-links {
+	color: #2d394c;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.menu__list-links:hover {
+	color:black;
+	font-weight: 800;
+	border-bottom:2px solid black;
+}
+
+.banner{
+	background-image: url(../images/banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	max-width: 100%;
+	min-height: 80vh;
+	height: 850px;
+
+}
+
+.banner__inner{
+padding-left: 30px;
+padding-top: 230px;
+padding-bottom: 250px;
+max-width: 600px;
+}
+
+.banner__title {
+
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 800;
+	font-size: 52px;
+	line-height: 72px;
+		
+}
+.banner__text {
+	color: #FFF;
+	font-size: 24px;
+	line-height: 47px;
+		
+}
+.banner__sign  {
+	color: #FFF;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 133px;
+}
+	 
+.banner__sign span {
+	display: inline-block;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 133px;
+	font-weight: 800;
+	text-transform: uppercase;
+	background-color: #FFCE54;
+	line-height: 34px;
+	padding: 2px 5px;
+	border-radius: 7px;
+	
+
+	
+		
+}
+.email__form {
+	max-width: 660px;
+}
+.email__form-input {
+	height: 55px;
+	width: 430px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: none;
+	color:#888;
+	font-size: 18px;
+	font-weight: 300;
+	font-family:'Ubuntu', sans-serif ;
+	border-radius: 7px
+
+}
+.email__form-btn {
+	margin-left: 11px;
+	border:none;
+	background-color: #77c344;
+	padding: 20px ;
+	border-radius: 7px;
+	text-transform: uppercase;
+	font-size: 18px;
+	color:white ;
+	cursor: pointer;
+	font-family:'Ubuntu', sans-serif ;
+	
+}
+
+.clients {
+background-color: #f8f8f8;
+margin-top: 30px;
+padding-top: 50px;
+padding-bottom: 90px;
+
+}
+
+
+.clients__inner {
+	display: flex;
+justify-content:space-between;
+
+	
+}
+.clients-item {
+	width: 150px;
+	height: 40px;
+}
+
+.reason {
+	background: url(../images/macbook.png)no-repeat;
+	background-position: top 140px right;
+	background-size: 655px 623px cover;
+	width:100%;
+	min-height: 100vh;
+	margin-bottom: 120px;
+
+
+}
+
+.reason__inner {
+	display: block;
+}
+.reason__inner-title {
+	text-transform: uppercase;
+	color: #2d394c;
+	text-align: center;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 133px;
+}
+.reason__item {
+	max-width: 484px;
+	min-height: 100%;
+}
+
+.reason__title{
+	font-size: 22px;
+	line-height: 74px;
+	color: #2d394c;
+	margin-left: 65px;
+	position: relative;
+}
+
+
+.reason__title::before{
+	content:' ';
+	position: absolute;
+	left: -60px;
+	top:12px;
+	width: 103px;
+	height: 103px;
+	}
+
+.reason__title--icon-1::before {
+	background-image: url(../images/watch.png);
+	background-repeat: no-repeat;
+}
+
+.reason__text {
+	font-family: 'Open Sans', sans-serif;
+	color: #9499a2;
+	line-height: 22px;
+	font-size: 14px;
+}
+.reason__title--icon-2::before {
+	background-image: url(../images/cloud-icon.png);
+	background-repeat: no-repeat;
+}
+
+.reason__title--icon-3::before {
+	background-image: url(../images/tweet.png);
+	background-repeat: no-repeat;
+}
+
+
+.reason__title--icon-4::before{
+	background-image: url(../images/message.png);
+	background-repeat: no-repeat;
+
+}
+.difference{
+	background-color: #f6f6f7;
+	height: 700px;
+}
+.slick-dots{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 45%;
+	max-width: 130px;
+	padding-top: 120px;
+	}
+
+.slick-dots li{
+	margin-right: 10px;
+}
+.slick-dots button{
+	border:none;
+	background-color:#f6f6f7;
+	color: grey;
+	border-radius:10px;
+	font-size: 18px;
+	padding:2px 6px;
+	font-family:'Ubuntu', sans-serif;
+}
+.slick-dots button:hover{
+
+	background-color:#64a4d7;
+	color: white;
+	
+}
+.slick-dots button:focus{
+
+	background-color:#64a4d7;
+	color: white;
+	
+}
+.difference__title{
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom:170px;
+	font-size: 40px;
+	color: #2d394c;
+	font-weight: 400;
+
+}
+.difference__item{
+	margin-left: 20px;
+}
+.difference__title{
+	
+	padding-top: 10%;
+	padding-bottom:170px;
+	font-size: 40px;
+	color: #2d394c;
+	font-weight: 400;
+
+}
+
+.difference__subtitle{
+	max-width:770px;
+	font-size: 28px;
+	margin-left: 80px;
+	color: #2d394c;
+	font-weight: 400;
+	padding-bottom: 30px;
+	position: relative;
+
+}
+
+
+.difference__subtitle::before{
+	content:'';
+	position: absolute;
+	top:12px;
+	left: 0;
+	width:50px;
+	height: 50px;
+	}
+
+.diffrence__subtitle--icon-5::before {
+	background-image: url(../images/watch.png);
+	background-repeat: no-repeat;
+}
+.difference__text{
+	max-width:770px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #9499a2;
+	line-height: 32px;
+	}
+
+.top__footer {
+	padding-top: 150px;
+	padding-bottom: 100px;
+   text-align: center;
+}
+
+
+.top__footer-title {
+	font-size: 40px;
+	line-height: 32px;
+	font-weight: 800 ;
+	color: #5A626E;
+	
+}
+.top__footer-subtitle {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 32px;
+	padding-top:60px ;
+	padding-bottom: 60px;
+}
+.top__footer-form {
+	
+}
+.top__footer-input {
+	padding-left: 45px;
+	padding-right: 25px;
+	height: 70px;
+	width: 630px;
+	border: 1px solid grey;
+	color:#888;
+	border-radius: 7px
+	padding: 0px 15px;
+}
+
+.top__footer-input:placeholder {
+		font-family: 'Open Sans', sans-serif;
+		padding: 0 15px;
+		color: #5A626E;
+}
+
+.top__footer-btn{
+	
+	width: 190px;
+	height: 70px;
+	background-color:  #77c344;
+	font-size: 20px;
+	color: #FFF;
+	text-transform: capitalize;
+}
